@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9장 과제</title>
+    <script>
+        // 연습문제 16번
+        let feet, inch;
+        let cm = prompt();
+
+        inch = cm / 2.54;
+        feet = inch / 12;
+
+        alert(inch);
+        alert(feet);
+
+        /***********************************/
+
+        // 연습문제 17번
+        const pi = Math.PI;
+        let area, volume;
+        let radius = prompt();
+        let height = prompt();
+
+        area = radius*radius*pi;
+        volume = area*height;
+
+        alert(volume);
+
+        /***********************************/
+
+        // 연습문제 18번
+        let num1000, num100, num10, num1, reminder;
+        let input = prompt();
+        let separation = [];
+
+        num1000 = parseInt(input / 1000); //자리 수 분리 연산
+        reminder = input % 1000;
+        num100 = parseInt(reminder / 100);
+        reminder = reminder % 100;
+        num10 = parseInt(reminder / 10);
+        reminder = reminder % 10;
+        num1 = parseInt(reminder / 1);
+
+        separation = [num1000, num100, num10, num1]; // 천의 자리부터 왼쪽에서 차례대로 출력되도록 배열 사용
+        
+        alert(separation);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
